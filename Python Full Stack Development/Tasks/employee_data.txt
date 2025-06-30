@@ -1,2 +1,4 @@
 Deeraj G R,22,manager,39000
 Manish,21,programmer,25000
+Himanshu Jangra ,22,tester,20000
+Mehak,22,manager,39000
