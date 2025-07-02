@@ -1,0 +1,86 @@
+/* General Styling */
+/* Ensure full height layout */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content grows to fill space */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer remains at bottom */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+}
+
+header {
+  background-color: #0055a5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Form Styling */
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.form-container input,
+.form-container label,
+.form-container button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.form-container button {
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #004080;
+}
+
+/* Table Styling */
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px #ccc;
+}
+
+th, td {
+  border: 1px solid #aaa;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #007acc;
+  color: white;
+}
