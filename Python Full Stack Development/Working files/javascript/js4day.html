@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style =color:red;text-align:center>Working Day / Holiday</h1>
+    <script>
+    var day =prompt("Enter a day of the week (e.g., Mon, Tue):");
+    day = day.toLowerCase();day
+    switch(day) {
+        case "mon":
+        case "Mon":
+        case "mon":
+        case "tue":
+        case "wed":
+        case "thu":
+        case "fri":
+            document.write("Working Day");
+        break;
+
+        case "Sat":
+        case "Sun":
+            document.write("Holiday");
+            break;
+        
+        default:
+            document.write("Invalid Input")
+    }
+
+    </script>
+</body>
+</html>
