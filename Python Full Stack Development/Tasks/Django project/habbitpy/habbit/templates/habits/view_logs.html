@@ -1,0 +1,18 @@
+<!DOCTYPE html> 
+<html>
+   <head>
+      <title>Habit Logs</title>
+      <style> body { font-family: Arial, sans-serif; background-color: #f3f3f3; padding: 40px; } .container { max-width: 600px; margin: auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); } h1 { margin-bottom: 20px; } ul { list-style: none; padding-left: 0; } li { padding: 10px; background: #f9f9f9; margin-bottom: 8px; border-radius: 5px; } .status { float: right; } a { display: inline-block; margin-top: 20px; color: #007bff; } </style>
+   </head>
+   <body>
+      <div class="container">
+         <h1>Logs for {{ habit.name }}</h1>
+         <ul>
+            {% for log in logs %} 
+            <li> {{ log.date }} <span class="status"> {% if log.completed %}✔️ Completed{% else %}❌ Missed{% endif %} </span> </li>
+            {% endfor %} 
+         </ul>
+         <a href="{% url 'dashboard' %}">← Back to Dashboard</a> 
+      </div>
+   </body>
+</html>
